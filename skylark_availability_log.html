@@ -86,7 +86,7 @@ tbody tr:hover { background:#1d1d1d; }
 </head>
 <body>
 <!-- LOG_START -->
-<div class="log-entry" id="entry-20260411155420">
+<div class="log-entry" id="entry-20260411155911">
   <!-- overview-block is what Playwright screenshots for the PNG -->
   <div class="overview-block">
     <h1 style="font-size:13px;font-weight:600;color:#666;letter-spacing:.08em;
@@ -123,7 +123,7 @@ tbody tr:hover { background:#1d1d1d; }
 </div>
     <div class="chart-wrap" style="height:300px">
       <div class="chart-title">7-Day Availability Trend by Region</div>
-      <canvas id="trend-20260411155420"></canvas>
+      <canvas id="trend-20260411155911"></canvas>
     </div>
   </div>
 
@@ -145,19 +145,19 @@ tbody tr:hover { background:#1d1d1d; }
   Colors: <span style="color:#00e676">green = 100%</span> ·
   <span style="color:#ff9800">orange ≥ 99%</span> ·
   <span style="color:#ff4444">red &lt; 99%</span>.</p>
-  <div class="chart-wrap" style="height:384px;margin-bottom:16px"><div class="chart-title" style="color:#00e676">AP Cluster &nbsp;·&nbsp; Endpoint Availability</div><canvas id="ep-ap-20260411155420"></canvas></div>
-<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#ff9800">EU Cluster &nbsp;·&nbsp; Endpoint Availability</div><canvas id="ep-eu-20260411155420"></canvas></div>
-<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#2196F3">NA Cluster &nbsp;·&nbsp; Endpoint Availability</div><canvas id="ep-na-20260411155420"></canvas></div>
+  <div class="chart-wrap" style="height:384px;margin-bottom:16px"><div class="chart-title" style="color:#00e676">AP Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-ap-20260411155911"></canvas></div>
+<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#ff9800">EU Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-eu-20260411155911"></canvas></div>
+<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#2196F3">NA Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-na-20260411155911"></canvas></div>
 
 
-  <div class="run-info">Generated 2026-04-11 15:54:47 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 72 at 100% &nbsp;·&nbsp; 180 degraded &nbsp;·&nbsp; Apr 5–11, 2026</div>
+  <div class="run-info">Generated 2026-04-11 15:59:40 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 72 at 100% &nbsp;·&nbsp; 180 degraded &nbsp;·&nbsp; Apr 5–11, 2026</div>
 
   <script>
   (function() {
     Chart.defaults.color = '#666';
     Chart.defaults.borderColor = '#1e1e1e';
     
-  const trendCtx = document.getElementById('trend-20260411155420').getContext('2d');
+  const trendCtx = document.getElementById('trend-20260411155911').getContext('2d');
   new Chart(trendCtx, {
     type: 'bar',
     data: {
@@ -166,10 +166,10 @@ tbody tr:hover { background:#1d1d1d; }
         { label:'AP', data:[99.992, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
            backgroundColor:'#00e67666', borderColor:'#00e676',
            borderWidth:1, borderRadius:4, base:99.09 },
-        { label:'EU', data:[99.842, 99.6852, 99.7578, 99.6408, 99.5012, 99.4906, 99.9711],
+        { label:'EU', data:[99.842, 99.6852, 99.7578, 99.6408, 99.5012, 99.4906, 99.9713],
            backgroundColor:'#ff980066', borderColor:'#ff9800',
            borderWidth:1, borderRadius:4, base:99.09 },
-        { label:'NA', data:[99.9162, 99.9425, 99.9712, 99.3922, 99.8045, 99.5504, 99.453],
+        { label:'NA', data:[99.9162, 99.9425, 99.9712, 99.3922, 99.8045, 99.5504, 99.4558],
            backgroundColor:'#2196F366', borderColor:'#2196F3',
            borderWidth:1, borderRadius:4, base:99.09 }
       ]
@@ -191,16 +191,16 @@ tbody tr:hover { background:#1d1d1d; }
     }
   });
     
-  const epCtx_ap_20260411155420 = document.getElementById('ep-ap-20260411155420').getContext('2d');
-  new Chart(epCtx_ap_20260411155420, {
+  const epCtx_ap_20260411155911 = document.getElementById('ep-ap-20260411155911').getContext('2d');
+  new Chart(epCtx_ap_20260411155911, {
     type: 'bar',
     data: {
       labels: ["NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "OSR", "SSR", "SSR-integrity"],
       datasets: [{
-        data: [99.99, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        data: [0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
         backgroundColor: ["#ff980055", "#00e67655", "#00e67655", "#00e67655", "#00e67655", "#00e67655", "#00e67655", "#00e67655", "#00e67655"],
         borderColor: ["#ff9800", "#00e676", "#00e676", "#00e676", "#00e676", "#00e676", "#00e676", "#00e676", "#00e676"],
-        borderWidth: 1, borderRadius: 4, base: 99.69
+        borderWidth: 1, borderRadius: 4
       }]
     },
     options: {
@@ -208,28 +208,35 @@ tbody tr:hover { background:#1d1d1d; }
       responsive: true, maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.raw?.toFixed(3)}%` } }
+        tooltip: { callbacks: {
+          label: (ctx) => {
+            const avail = [99.99, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0][ctx.dataIndex];
+            return ` Availability: ${avail.toFixed(3)}%  |  Downtime: ${ctx.raw.toFixed(3)}%`;
+          }
+        } },
+        datalabels: { display: false }
       },
       scales: {
         x: {
-          min: 99.69, max: 100,
-          ticks: { color:'#666', count:11, callback: v => v+'%' },
-          grid: { color:'#1e1e1e' }
+          min: 0, max: 0.100,
+          ticks: { color:'#666', count:6, callback: v => v.toFixed(2)+'%' },
+          grid: { color:'#1e1e1e' },
+          title: { display:true, text:'Downtime %', color:'#555', font:{size:11} }
         },
         y: { ticks: { color:'#aaa', font:{size:11} }, grid: { display:false } }
       }
     }
   });
-  const epCtx_eu_20260411155420 = document.getElementById('ep-eu-20260411155420').getContext('2d');
-  new Chart(epCtx_eu_20260411155420, {
+  const epCtx_eu_20260411155911 = document.getElementById('ep-eu-20260411155911').getContext('2d');
+  new Chart(epCtx_eu_20260411155911, {
     type: 'bar',
     data: {
       labels: ["SSR", "OSR", "MSM5-ZB", "SSR-integrity", "DX-MSM1", "MSM5", "MSM4", "NXRTK-ETRF2000-MSM5", "NXRTK-RTCM31", "NXRTK-MSM5"],
       datasets: [{
-        data: [99.004, 99.076, 99.274, 99.921, 99.938, 99.938, 99.939, 99.945, 99.947, 99.955],
+        data: [0.996, 0.923, 0.725, 0.079, 0.062, 0.062, 0.061, 0.055, 0.053, 0.045],
         backgroundColor: ["#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055"],
         borderColor: ["#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800"],
-        borderWidth: 1, borderRadius: 4, base: 98.70
+        borderWidth: 1, borderRadius: 4
       }]
     },
     options: {
@@ -237,28 +244,35 @@ tbody tr:hover { background:#1d1d1d; }
       responsive: true, maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.raw?.toFixed(3)}%` } }
+        tooltip: { callbacks: {
+          label: (ctx) => {
+            const avail = [99.004, 99.077, 99.275, 99.921, 99.938, 99.938, 99.939, 99.945, 99.947, 99.955][ctx.dataIndex];
+            return ` Availability: ${avail.toFixed(3)}%  |  Downtime: ${ctx.raw.toFixed(3)}%`;
+          }
+        } },
+        datalabels: { display: false }
       },
       scales: {
         x: {
-          min: 98.70, max: 100,
-          ticks: { color:'#666', count:11, callback: v => v+'%' },
-          grid: { color:'#1e1e1e' }
+          min: 0, max: 1.295,
+          ticks: { color:'#666', count:6, callback: v => v.toFixed(2)+'%' },
+          grid: { color:'#1e1e1e' },
+          title: { display:true, text:'Downtime %', color:'#555', font:{size:11} }
         },
         y: { ticks: { color:'#aaa', font:{size:11} }, grid: { display:false } }
       }
     }
   });
-  const epCtx_na_20260411155420 = document.getElementById('ep-na-20260411155420').getContext('2d');
-  new Chart(epCtx_na_20260411155420, {
+  const epCtx_na_20260411155911 = document.getElementById('ep-na-20260411155911').getContext('2d');
+  new Chart(epCtx_na_20260411155911, {
     type: 'bar',
     data: {
       labels: ["NXRTK-RTCM31", "NXRTK-NAD83-MSM5", "NXRTK-MSM5", "MSM5", "MSM4", "OSR", "DX-MSM1", "MSM5-ZB", "SSR-integrity", "SSR"],
       datasets: [{
-        data: [99.412, 99.414, 99.507, 99.816, 99.817, 99.844, 99.851, 99.867, 99.897, 99.953],
+        data: [0.588, 0.586, 0.493, 0.184, 0.183, 0.156, 0.149, 0.133, 0.102, 0.047],
         backgroundColor: ["#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055", "#ff980055"],
         borderColor: ["#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800", "#ff9800"],
-        borderWidth: 1, borderRadius: 4, base: 99.11
+        borderWidth: 1, borderRadius: 4
       }]
     },
     options: {
@@ -266,13 +280,20 @@ tbody tr:hover { background:#1d1d1d; }
       responsive: true, maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.raw?.toFixed(3)}%` } }
+        tooltip: { callbacks: {
+          label: (ctx) => {
+            const avail = [99.412, 99.414, 99.507, 99.816, 99.817, 99.844, 99.851, 99.867, 99.898, 99.953][ctx.dataIndex];
+            return ` Availability: ${avail.toFixed(3)}%  |  Downtime: ${ctx.raw.toFixed(3)}%`;
+          }
+        } },
+        datalabels: { display: false }
       },
       scales: {
         x: {
-          min: 99.11, max: 100,
-          ticks: { color:'#666', count:11, callback: v => v+'%' },
-          grid: { color:'#1e1e1e' }
+          min: 0, max: 0.764,
+          ticks: { color:'#666', count:6, callback: v => v.toFixed(2)+'%' },
+          grid: { color:'#1e1e1e' },
+          title: { display:true, text:'Downtime %', color:'#555', font:{size:11} }
         },
         y: { ticks: { color:'#aaa', font:{size:11} }, grid: { display:false } }
       }
@@ -282,5 +303,7 @@ tbody tr:hover { background:#1d1d1d; }
   })();
   </script>
 </div>
+</body>
+</html>
 </body>
 </html>

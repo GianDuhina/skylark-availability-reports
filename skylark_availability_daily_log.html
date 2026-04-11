@@ -38,7 +38,7 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 </head>
 <body>
 <!-- LOG_START -->
-<div class="log-entry" id="entry-20260411171339">
+<div class="log-entry" id="entry-20260411171641">
   <div class="overview-block">
     <span class="mode-badge mode-daily">DAILY REPORT</span>
     <h1 style="font-size:13px;font-weight:600;color:#666;letter-spacing:.08em;
@@ -83,6 +83,10 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
     </div>
 
     
+<div class="chart-wrap" style="height:300px">
+  <div class="chart-title">Availability by Time Segment</div>
+  <canvas id="trend-20260411171641"></canvas>
+</div>
   </div>
 
   <div class="divider"></div>
@@ -92,21 +96,44 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
   Colors: <span style="color:#00e676">green = 100%</span> ·
   <span style="color:#ff9800">orange ≥ 99%</span> ·
   <span style="color:#ff4444">red &lt; 99%</span>.</p>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:384px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260411171339"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260411171339"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260411171339"></canvas></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:384px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260411171641"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260411171641"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260411171641"></canvas></div>
 </div>
 
-  <div class="run-info">Generated 2026-04-11 17:13:39 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 146 at 100% &nbsp;·&nbsp; 106 degraded &nbsp;·&nbsp; April 10, 15:00 UTC – April 11, 15:00 UTC · 24h</div>
+  <div class="run-info">Generated 2026-04-11 17:16:41 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 146 at 100% &nbsp;·&nbsp; 106 degraded &nbsp;·&nbsp; April 10, 15:00 UTC – April 11, 15:00 UTC · 24h</div>
 
   <script>
   (function() {
     Chart.defaults.color = '#666';
     Chart.defaults.borderColor = '#1e1e1e';
     
+  const trendCtx = document.getElementById('trend-20260411171641').getContext('2d');
+  new Chart(trendCtx, {
+    type:'bar',
+    data:{
+      labels:["Fri April 10", "Sat April 11"],
+      datasets:[
+        {label:'AP',data:[100.0, 100.0],backgroundColor:'#00e67666',borderColor:'#00e676',borderWidth:1,borderRadius:4,base:98.77},
+        {label:'EU',data:[99.0996, 100.0],backgroundColor:'#ff980066',borderColor:'#ff9800',borderWidth:1,borderRadius:4,base:98.77},
+        {label:'NA',data:[99.0737, 99.4195],backgroundColor:'#2196F366',borderColor:'#2196F3',borderWidth:1,borderRadius:4,base:98.77}
+      ]
+    },
+    options:{
+      animation:false,responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{labels:{color:'#aaa',font:{size:12}}},
+        tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw?.toFixed(3)}%`}}
+      },
+      scales:{
+        x:{ticks:{color:'#666',font:{size:11}},grid:{color:'#1e1e1e'}},
+        y:{min:98.77,max:100,ticks:{color:'#666',font:{size:11},count:11,callback:v=>v+'%'},grid:{color:'#1e1e1e'}}
+      }
+    }
+  });
     
-  const epCtx_ap_20260411171339 = document.getElementById('ep-ap-20260411171339').getContext('2d');
-  new Chart(epCtx_ap_20260411171339, {
+  const epCtx_ap_20260411171641 = document.getElementById('ep-ap-20260411171641').getContext('2d');
+  new Chart(epCtx_ap_20260411171641, {
     type:'bar',
     data:{
       labels:["DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "NXRTK-RTCM31", "OSR", "SSR", "SSR-integrity"],
@@ -129,8 +156,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_eu_20260411171339 = document.getElementById('ep-eu-20260411171339').getContext('2d');
-  new Chart(epCtx_eu_20260411171339, {
+  const epCtx_eu_20260411171641 = document.getElementById('ep-eu-20260411171641').getContext('2d');
+  new Chart(epCtx_eu_20260411171641, {
     type:'bar',
     data:{
       labels:["OSR", "SSR", "MSM5-ZB", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "SSR-integrity"],
@@ -153,8 +180,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_na_20260411171339 = document.getElementById('ep-na-20260411171339').getContext('2d');
-  new Chart(epCtx_na_20260411171339, {
+  const epCtx_na_20260411171641 = document.getElementById('ep-na-20260411171641').getContext('2d');
+  new Chart(epCtx_na_20260411171641, {
     type:'bar',
     data:{
       labels:["NXRTK-RTCM31", "NXRTK-NAD83-MSM5", "NXRTK-MSM5", "MSM5-ZB", "MSM5", "MSM4", "DX-MSM1", "SSR-integrity", "OSR", "SSR"],

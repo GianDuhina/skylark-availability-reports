@@ -38,7 +38,7 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 </head>
 <body>
 <!-- LOG_START -->
-<div class="log-entry" id="entry-20260411171753">
+<div class="log-entry" id="entry-20260411172013">
   <div class="overview-block">
     <span class="mode-badge mode-daily">DAILY REPORT</span>
     <h1 style="font-size:13px;font-weight:600;color:#666;letter-spacing:.08em;
@@ -46,7 +46,7 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       Skylark Availability &nbsp;·&nbsp; Daily Report — Saturday, April 11, 2026
     </h1>
 
-    <div style="display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;margin-bottom:20px">
+    <div style="display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:start;margin-bottom:20px">
       
 <div style="display:flex;flex-direction:column;gap:10px;min-width:210px;max-width:240px">
   <div class="stat-card">
@@ -70,13 +70,13 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
     <div class="stat-sub">60s step</div>
   </div>
 </div>
-      <div>
-        
-<div class="chart-wrap" style="height:300px">
+      
+<div class="chart-wrap" style="height:300px;min-width:480px">
   <div class="chart-title">Availability by Time Segment</div>
-  <canvas id="trend-20260411171753"></canvas>
+  <canvas id="trend-20260411172013"></canvas>
 </div>
-        <p class="section-desc" style="margin-bottom:12px;margin-top:16px">
+      <div>
+        <p class="section-desc" style="margin-bottom:12px">
           AP (Asia-Pacific) · EU (Europe) · NA (North America) performance breakdown
           by region, frequency band, and access port.
         </p>
@@ -95,19 +95,19 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
   Colors: <span style="color:#00e676">green = 100%</span> ·
   <span style="color:#ff9800">orange ≥ 99%</span> ·
   <span style="color:#ff4444">red &lt; 99%</span>.</p>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:384px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260411171753"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260411171753"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260411171753"></canvas></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:384px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260411172013"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260411172013"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260411172013"></canvas></div>
 </div>
 
-  <div class="run-info">Generated 2026-04-11 17:17:53 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 146 at 100% &nbsp;·&nbsp; 106 degraded &nbsp;·&nbsp; April 10, 15:00 UTC – April 11, 15:00 UTC · 24h</div>
+  <div class="run-info">Generated 2026-04-11 17:20:13 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 146 at 100% &nbsp;·&nbsp; 106 degraded &nbsp;·&nbsp; April 10, 15:00 UTC – April 11, 15:00 UTC · 24h</div>
 
   <script>
   (function() {
     Chart.defaults.color = '#666';
     Chart.defaults.borderColor = '#1e1e1e';
     
-  const trendCtx = document.getElementById('trend-20260411171753').getContext('2d');
+  const trendCtx = document.getElementById('trend-20260411172013').getContext('2d');
   new Chart(trendCtx, {
     type:'bar',
     data:{
@@ -131,8 +131,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
     }
   });
     
-  const epCtx_ap_20260411171753 = document.getElementById('ep-ap-20260411171753').getContext('2d');
-  new Chart(epCtx_ap_20260411171753, {
+  const epCtx_ap_20260411172013 = document.getElementById('ep-ap-20260411172013').getContext('2d');
+  new Chart(epCtx_ap_20260411172013, {
     type:'bar',
     data:{
       labels:["DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "NXRTK-RTCM31", "OSR", "SSR", "SSR-integrity"],
@@ -155,8 +155,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_eu_20260411171753 = document.getElementById('ep-eu-20260411171753').getContext('2d');
-  new Chart(epCtx_eu_20260411171753, {
+  const epCtx_eu_20260411172013 = document.getElementById('ep-eu-20260411172013').getContext('2d');
+  new Chart(epCtx_eu_20260411172013, {
     type:'bar',
     data:{
       labels:["OSR", "SSR", "MSM5-ZB", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "SSR-integrity"],
@@ -179,8 +179,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_na_20260411171753 = document.getElementById('ep-na-20260411171753').getContext('2d');
-  new Chart(epCtx_na_20260411171753, {
+  const epCtx_na_20260411172013 = document.getElementById('ep-na-20260411172013').getContext('2d');
+  new Chart(epCtx_na_20260411172013, {
     type:'bar',
     data:{
       labels:["NXRTK-RTCM31", "NXRTK-NAD83-MSM5", "NXRTK-MSM5", "MSM5-ZB", "MSM5", "MSM4", "DX-MSM1", "SSR-integrity", "OSR", "SSR"],

@@ -86,7 +86,7 @@ tbody tr:hover { background:#1d1d1d; }
 </head>
 <body>
 <!-- LOG_START -->
-<div class="log-entry" id="entry-20260411160343">
+<div class="log-entry" id="entry-20260411160446">
   <!-- overview-block is what Playwright screenshots for the PNG -->
   <div class="overview-block">
     <h1 style="font-size:13px;font-weight:600;color:#666;letter-spacing:.08em;
@@ -123,7 +123,7 @@ tbody tr:hover { background:#1d1d1d; }
 </div>
     <div class="chart-wrap" style="height:300px">
       <div class="chart-title">7-Day Availability Trend by Region</div>
-      <canvas id="trend-20260411160343"></canvas>
+      <canvas id="trend-20260411160446"></canvas>
     </div>
   </div>
 
@@ -145,19 +145,19 @@ tbody tr:hover { background:#1d1d1d; }
   Colors: <span style="color:#00e676">green = 100%</span> ·
   <span style="color:#ff9800">orange ≥ 99%</span> ·
   <span style="color:#ff4444">red &lt; 99%</span>.</p>
-  <div class="chart-wrap" style="height:384px;margin-bottom:16px"><div class="chart-title" style="color:#00e676">AP Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-ap-20260411160343"></canvas></div>
-<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#ff9800">EU Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-eu-20260411160343"></canvas></div>
-<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#2196F3">NA Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-na-20260411160343"></canvas></div>
+  <div class="chart-wrap" style="height:384px;margin-bottom:16px"><div class="chart-title" style="color:#00e676">AP Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-ap-20260411160446"></canvas></div>
+<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#ff9800">EU Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-eu-20260411160446"></canvas></div>
+<div class="chart-wrap" style="height:420px;margin-bottom:16px"><div class="chart-title" style="color:#2196F3">NA Cluster &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:11px;color:#666;font-weight:400">(longer bar = more downtime · labels show availability %)</span></div><canvas id="ep-na-20260411160446"></canvas></div>
 
 
-  <div class="run-info">Generated 2026-04-11 16:04:25 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 72 at 100% &nbsp;·&nbsp; 180 degraded &nbsp;·&nbsp; Apr 5–11, 2026</div>
+  <div class="run-info">Generated 2026-04-11 16:05:27 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 72 at 100% &nbsp;·&nbsp; 180 degraded &nbsp;·&nbsp; Apr 5–11, 2026</div>
 
   <script>
   (function() {
     Chart.defaults.color = '#666';
     Chart.defaults.borderColor = '#1e1e1e';
     
-  const trendCtx = document.getElementById('trend-20260411160343').getContext('2d');
+  const trendCtx = document.getElementById('trend-20260411160446').getContext('2d');
   new Chart(trendCtx, {
     type: 'bar',
     data: {
@@ -169,7 +169,7 @@ tbody tr:hover { background:#1d1d1d; }
         { label:'EU', data:[99.842, 99.6852, 99.7578, 99.6408, 99.5012, 99.4906, 99.9714],
            backgroundColor:'#ff980066', borderColor:'#ff9800',
            borderWidth:1, borderRadius:4, base:99.09 },
-        { label:'NA', data:[99.9162, 99.9425, 99.9712, 99.3922, 99.8045, 99.5504, 99.458],
+        { label:'NA', data:[99.9162, 99.9425, 99.9712, 99.3922, 99.8045, 99.5504, 99.4585],
            backgroundColor:'#2196F366', borderColor:'#2196F3',
            borderWidth:1, borderRadius:4, base:99.09 }
       ]
@@ -191,8 +191,8 @@ tbody tr:hover { background:#1d1d1d; }
     }
   });
     
-  const epCtx_ap_20260411160343 = document.getElementById('ep-ap-20260411160343').getContext('2d');
-  new Chart(epCtx_ap_20260411160343, {
+  const epCtx_ap_20260411160446 = document.getElementById('ep-ap-20260411160446').getContext('2d');
+  new Chart(epCtx_ap_20260411160446, {
     type: 'bar',
     data: {
       labels: ["NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "OSR", "SSR", "SSR-integrity"],
@@ -227,8 +227,8 @@ tbody tr:hover { background:#1d1d1d; }
       }
     }
   });
-  const epCtx_eu_20260411160343 = document.getElementById('ep-eu-20260411160343').getContext('2d');
-  new Chart(epCtx_eu_20260411160343, {
+  const epCtx_eu_20260411160446 = document.getElementById('ep-eu-20260411160446').getContext('2d');
+  new Chart(epCtx_eu_20260411160446, {
     type: 'bar',
     data: {
       labels: ["SSR", "OSR", "MSM5-ZB", "SSR-integrity", "DX-MSM1", "MSM5", "MSM4", "NXRTK-ETRF2000-MSM5", "NXRTK-RTCM31", "NXRTK-MSM5"],
@@ -263,8 +263,8 @@ tbody tr:hover { background:#1d1d1d; }
       }
     }
   });
-  const epCtx_na_20260411160343 = document.getElementById('ep-na-20260411160343').getContext('2d');
-  new Chart(epCtx_na_20260411160343, {
+  const epCtx_na_20260411160446 = document.getElementById('ep-na-20260411160446').getContext('2d');
+  new Chart(epCtx_na_20260411160446, {
     type: 'bar',
     data: {
       labels: ["NXRTK-RTCM31", "NXRTK-NAD83-MSM5", "NXRTK-MSM5", "MSM5", "MSM4", "OSR", "DX-MSM1", "MSM5-ZB", "SSR-integrity", "SSR"],
@@ -303,7 +303,5 @@ tbody tr:hover { background:#1d1d1d; }
   })();
   </script>
 </div>
-</body>
-</html>
 </body>
 </html>

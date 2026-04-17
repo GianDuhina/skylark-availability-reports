@@ -39,6 +39,263 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 <body>
 <!-- LOG_START -->
 
+<div class="log-entry" id="entry-20260417172146">
+
+  <!-- ROW 1: Header + Overview -->
+  <div class="overview-block">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:12px;font-weight:600;color:#555;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Friday, April 17, 2026
+      </span>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr minmax(260px,360px);gap:18px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:190px;max-width:210px"><div class="stat-card">
+    <div class="stat-label">24h Availability</div>
+    <div class="stat-value" style="color:#ff9800">99.368%</div>
+    <div class="stat-sub">all endpoints &middot; 24h shift window</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Had Downtime</div>
+    <div class="stat-value" style="color:#ff6b35">43<span style="font-size:14px;color:#444"> / 252</span></div>
+    <div class="stat-sub">endpoints affected</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Total Downtime</div>
+    <div class="stat-value" style="font-size:22px;color:#ff6b35">2298<span style="font-size:13px;color:#444"> min</span></div>
+    <div class="stat-sub">sum across all endpoints</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Data Window</div>
+    <div class="stat-value" style="font-size:12px;color:#777;line-height:1.6">April 16, 15:00 UTC – April 17, 15:00 UTC · 24h</div>
+    <div class="stat-sub">60s step</div>
+  </div></div>
+      <div class="chart-wrap" style="height:268px"><div class="chart-title">AVAILABILITY TREND BY REGION</div><canvas id="trend-20260417172146"></canvas></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Region</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Frequency</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Port</div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">AP</div><div style="font-size:17px;font-weight:700;color:#00e676">99.992%</div><div style="font-size:10px;color:#333;margin-top:2px">9 degraded &middot; 9m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">ALL-FREQ</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.704%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTP :2101</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.193%</div><div style="font-size:10px;color:#333;margin-top:2px">977m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">EU</div><div style="font-size:17px;font-weight:700;color:#ff4444">98.175%</div><div style="font-size:10px;color:#333;margin-top:2px">34 degraded &middot; 2289m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L2</div><div style="font-size:17px;font-weight:700;color:#ff4444">98.593%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTPS :2102</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.184%</div><div style="font-size:10px;color:#333;margin-top:2px">988m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">NA</div><div style="font-size:17px;font-weight:700;color:#00e676">100.000%</div><div style="font-size:10px;color:#333;margin-top:2px">0 degraded &middot; 0m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L5</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.841%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">Ent :2103</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.725%</div><div style="font-size:10px;color:#333;margin-top:2px">333m down</div></div></div>
+</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 2: Mountpoint Group Charts (2×2) -->
+  <h2>Mountpoint Group Summary</h2>
+  <p class="section-desc" style="margin-bottom:12px">Combined availability (AP + EU + NA) per business group &middot; hover for exact %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px"><div class="chart-wrap" style="height:230px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-20260417172146"></canvas></div>
+<div class="chart-wrap" style="height:230px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-20260417172146"></canvas></div>
+<div class="chart-wrap" style="height:230px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-20260417172146"></canvas></div>
+<div class="chart-wrap" style="height:230px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-20260417172146"></canvas></div>
+</div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 3: Endpoint Downtime -->
+  <h2>Endpoint Downtime</h2>
+  <p class="section-desc" style="margin-bottom:12px">Per-endpoint downtime worst first &middot; hover for availability %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start"><div class="chart-wrap" style="height:390px"><div class="chart-title">AP &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-ap-20260417172146"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">EU &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-eu-20260417172146"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">NA &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-na-20260417172146"></canvas></div>
+</div>
+
+  <div class="run-info">Generated 2026-04-17 17:21:46 UTC &middot; 252 mountpoints &middot; 209 at 100% &middot; 43 degraded &middot; April 16, 15:00 UTC – April 17, 15:00 UTC · 24h</div>
+
+  <script>
+  (function() {
+    Chart.defaults.color = '#555';
+    Chart.defaults.borderColor = '#191919';
+    
+  function barColor_20260417172146(v, a) {
+    a = (a === undefined) ? 1.0 : a;
+    if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+    v = Math.max(0, Math.min(100, v));
+    const S = [[100,[34,197,94]],[80,[234,179,8]],[40,[249,115,22]],[20,[239,68,68]],[0,[127,29,29]]];
+    for (let i = 0; i < S.length - 1; i++) {
+      const [p1,c1] = S[i], [p2,c2] = S[i+1];
+      if (v >= p2) {
+        const t = (v-p2)/(p1-p2);
+        return `rgba(${Math.round(c1[0]*t+c2[0]*(1-t))},${Math.round(c1[1]*t+c2[1]*(1-t))},${Math.round(c1[2]*t+c2[2]*(1-t))},${a})`;
+      }
+    }
+    return `rgba(127,29,29,${a})`;
+  }
+    
+  (function(){
+    const tAP_20260417172146=[99.9787, 100.0], tEU_20260417172146=[98.0496, 98.2509], tNA_20260417172146=[100.0, 100.0];
+    new Chart(document.getElementById('trend-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Thu April 16", "Fri April 17"],datasets:[
+        {label:'AP',data:tAP_20260417172146,backgroundColor:tAP_20260417172146.map(v=>barColor_20260417172146(v,0.80)),borderColor:tAP_20260417172146.map(v=>barColor_20260417172146(v,1)),borderWidth:1,borderRadius:3,maxBarThickness:22,barPercentage:0.5,categoryPercentage:0.6},
+        {label:'EU',data:tEU_20260417172146,backgroundColor:tEU_20260417172146.map(v=>barColor_20260417172146(v,0.55)),borderColor:tEU_20260417172146.map(v=>barColor_20260417172146(v,0.85)),borderWidth:1,borderRadius:3,maxBarThickness:22,barPercentage:0.5,categoryPercentage:0.6},
+        {label:'NA',data:tNA_20260417172146,backgroundColor:tNA_20260417172146.map(v=>barColor_20260417172146(v,0.35)),borderColor:tNA_20260417172146.map(v=>barColor_20260417172146(v,0.65)),borderWidth:1,borderRadius:3,maxBarThickness:22,barPercentage:0.5,categoryPercentage:0.6}
+      ]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{labels:{color:'#555',font:{size:11},boxWidth:10,padding:10}},tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw?.toFixed(4)}%`}}},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},padding:6},grid:{display:false}},
+          y:{min:97.75,max:100,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(2)+'%'},grid:{color:'#1a1a1a'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const d_gc_skylark_cx_integrity_20260417172146=[100.0, 99.9322];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 16", "Apr 17"],datasets:[{
+        data:d_gc_skylark_cx_integrity_20260417172146,
+        backgroundColor:d_gc_skylark_cx_integrity_20260417172146.map(v=>barColor_20260417172146(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_20260417172146.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_20260417172146=[99.7782, 99.4771];
+    new Chart(document.getElementById('gc-skylark-cx-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 16", "Apr 17"],datasets:[{
+        data:d_gc_skylark_cx_20260417172146,
+        backgroundColor:d_gc_skylark_cx_20260417172146.map(v=>barColor_20260417172146(v,0.78)),
+        borderColor:d_gc_skylark_cx_20260417172146.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:0},grid:{display:false}},
+          y:{min:99.2,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_20260417172146=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 16", "Apr 17"],datasets:[{
+        data:d_gc_skylark_dx_20260417172146,
+        backgroundColor:d_gc_skylark_dx_20260417172146.map(v=>barColor_20260417172146(v,0.78)),
+        borderColor:d_gc_skylark_dx_20260417172146.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_20260417172146=[98.036, 98.884];
+    new Chart(document.getElementById('gc-skylark-nx-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 16", "Apr 17"],datasets:[{
+        data:d_gc_skylark_nx_20260417172146,
+        backgroundColor:d_gc_skylark_nx_20260417172146.map(v=>barColor_20260417172146(v,0.78)),
+        borderColor:d_gc_skylark_nx_20260417172146.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:0},grid:{display:false}},
+          y:{min:97.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const ep_ap_20260417172146_av=[99.931, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_ap_20260417172146_dn=[0.069, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-ap-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_ap_20260417172146_dn,
+        backgroundColor:ep_ap_20260417172146_av.map(v=>barColor_20260417172146(v,0.55)),
+        borderColor:ep_ap_20260417172146_av.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_ap_20260417172146_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.100,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_eu_20260417172146_av=[96.194, 96.201, 96.201, 97.596, 97.665, 98.59, 99.873, 100.0, 100.0, 100.0], ep_eu_20260417172146_dn=[3.806, 3.799, 3.799, 2.404, 2.335, 1.41, 0.127, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-eu-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31", "SSR", "OSR", "MSM5-ZB", "SSR-integrity", "DX-MSM1", "MSM4", "MSM5"],datasets:[{
+        data:ep_eu_20260417172146_dn,
+        backgroundColor:ep_eu_20260417172146_av.map(v=>barColor_20260417172146(v,0.55)),
+        borderColor:ep_eu_20260417172146_av.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_eu_20260417172146_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:4.948,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_na_20260417172146_av=[100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_na_20260417172146_dn=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-na-20260417172146').getContext('2d'),{
+      type:'bar',
+      data:{labels:["DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "NXRTK-NAD83-MSM5", "NXRTK-RTCM31", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_na_20260417172146_dn,
+        backgroundColor:ep_na_20260417172146_av.map(v=>barColor_20260417172146(v,0.55)),
+        borderColor:ep_na_20260417172146_av.map(v=>barColor_20260417172146(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_na_20260417172146_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.100,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    window.chartsReady = true;
+  })();
+  </script>
+</div>
+<hr class="entry-sep">
+
+
 <div class="log-entry" id="entry-20260417170605">
   <div class="overview-block">
 

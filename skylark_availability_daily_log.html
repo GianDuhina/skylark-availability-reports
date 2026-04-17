@@ -38,15 +38,17 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 </head>
 <body>
 <!-- LOG_START -->
-<div class="log-entry" id="entry-20260417170029">
+<div class="log-entry" id="entry-20260417170605">
   <div class="overview-block">
-    <span class="mode-badge mode-daily">DAILY REPORT</span>
-    <h1 style="font-size:13px;font-weight:600;color:#666;letter-spacing:.08em;
-               text-transform:uppercase;margin-bottom:20px;">
-      Skylark Availability &nbsp;·&nbsp; Daily Report — Friday, April 17, 2026
-    </h1>
 
-    <div style="display:grid;grid-template-columns:220px 1fr 480px;gap:24px;align-items:start;margin-bottom:20px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:13px;font-weight:600;color:#666;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Friday, April 17, 2026
+      </span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:220px 1fr 1fr;gap:20px;align-items:start;margin-bottom:20px">
       <div style="display:flex;flex-direction:column;gap:10px;min-width:210px;max-width:240px"><div class="stat-card">
     <div class="stat-label">24h Availability</div>
     <div class="stat-value" style="color:#ff9800">99.368%</div>
@@ -67,63 +69,42 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       
 <div class="chart-wrap" style="height:300px">
   <div class="chart-title">Availability by Time Segment</div>
-  <canvas id="trend-20260417170029"></canvas>
+  <canvas id="trend-20260417170605"></canvas>
 </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px 16px;margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Region</div><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Frequency Band</div><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Access Port</div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#00e676;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">ap</div><div style="font-size:22px;font-weight:700;color:#00e676">99.992%</div><div style="font-size:10px;color:#555;margin-top:3px">9 degraded · 9m down</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#9c27b0;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">all-freq</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.704%</div><div style="font-size:10px;color:#555;margin-top:3px">avg</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#4caf50;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">HTTP :2101</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.193%</div><div style="font-size:10px;color:#555;margin-top:3px">977m downtime</div></div></div>
+      <div class="chart-wrap" style="height:280px"><div class="chart-title">MOUNTPOINT GROUP AVAILABILITY &nbsp;·&nbsp; <span style="font-size:10px;color:#555;font-weight:400">AP / EU / NA / Combined · hover for detail</span></div><canvas id="group-20260417170605"></canvas></div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>By Region &nbsp;&middot;&nbsp; Frequency Band &nbsp;&middot;&nbsp; Access Port</h2>
+  <p class="section-desc" style="margin-bottom:14px">Aggregated availability across all endpoints for the window.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px 16px;margin-bottom:8px"><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Region</div><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Frequency Band</div><div style="font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.08em;padding-bottom:4px">By Access Port</div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#00e676;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">ap</div><div style="font-size:22px;font-weight:700;color:#00e676">99.992%</div><div style="font-size:10px;color:#555;margin-top:3px">9 degraded · 9m down</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#9c27b0;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">all-freq</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.704%</div><div style="font-size:10px;color:#555;margin-top:3px">avg</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#4caf50;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">HTTP :2101</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.193%</div><div style="font-size:10px;color:#555;margin-top:3px">977m downtime</div></div></div>
 <div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#ff9800;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">eu</div><div style="font-size:22px;font-weight:700;color:#ff4444">98.175%</div><div style="font-size:10px;color:#555;margin-top:3px">34 degraded · 2289m down</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#00bcd4;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">l1l2</div><div style="font-size:22px;font-weight:700;color:#ff4444">98.593%</div><div style="font-size:10px;color:#555;margin-top:3px">avg</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#2196F3;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">HTTPS :2102</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.184%</div><div style="font-size:10px;color:#555;margin-top:3px">988m downtime</div></div></div>
 <div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#2196F3;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">na</div><div style="font-size:22px;font-weight:700;color:#00e676">100.000%</div><div style="font-size:10px;color:#555;margin-top:3px">0 degraded · 0m down</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#ff5722;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">l1l5</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.841%</div><div style="font-size:10px;color:#555;margin-top:3px">avg</div></div></div><div><div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#ff9800;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:4px">Enterprise :2103</div><div style="font-size:22px;font-weight:700;color:#ff9800">99.725%</div><div style="font-size:10px;color:#555;margin-top:3px">333m downtime</div></div></div>
 </div>
-    </div>
-  </div>
 
   <div class="divider"></div>
-
-  <h2>Mountpoint Group Summary</h2>
-  <p class="section-desc" style="margin-bottom:14px">
-    Availability aggregated by business-level mountpoint group across all URLs and ports.
-    Downtime shown only when &gt; 0.
-  </p>
-  <div style="overflow-x:auto;margin-bottom:8px">
-    <table style="border-collapse:collapse;background:#1e1e1e;border:1px solid #2a2a2a;border-radius:8px;width:auto">
-      <thead>
-        <tr>
-          <th style="padding:6px 14px;font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.07em;font-family:monospace;border-bottom:1px solid #2a2a2a">Mountpoint Group</th>
-          <th style="text-align:right;padding:6px 14px;font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.07em;font-family:monospace;border-bottom:1px solid #2a2a2a">AP</th>
-          <th style="text-align:right;padding:6px 14px;font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.07em;font-family:monospace;border-bottom:1px solid #2a2a2a">EU</th>
-          <th style="text-align:right;padding:6px 14px;font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.07em;font-family:monospace;border-bottom:1px solid #2a2a2a">NA</th>
-          <th style="text-align:right;padding:6px 14px;font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.07em;font-family:monospace;border-bottom:1px solid #2a2a2a">Combined</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td style="padding:7px 14px;font-size:12px;font-family:monospace;color:#aaa;white-space:nowrap">Skylark Cx-Integrity</td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#ff9800">99.8729%</span><div style="font-size:10px;color:#555;margin-top:2px">11m down</div></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">99.9576%</span><div style="font-size:10px;color:#555;margin-top:2px">11m down</div></td></tr>
-<tr><td style="padding:7px 14px;font-size:12px;font-family:monospace;color:#aaa;white-space:nowrap">Skylark Cx</td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#ff4444">98.7702%</span><div style="font-size:10px;color:#555;margin-top:2px">798m down</div></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#ff9800">99.5901%</span><div style="font-size:10px;color:#555;margin-top:2px">798m down</div></td></tr>
-<tr><td style="padding:7px 14px;font-size:12px;font-family:monospace;color:#aaa;white-space:nowrap">Skylark Dx</td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td></tr>
-<tr><td style="padding:7px 14px;font-size:12px;font-family:monospace;color:#aaa;white-space:nowrap">Skylark Nx</td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">99.9653%</span><div style="font-size:10px;color:#555;margin-top:2px">9m down</div></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#ff4444">96.1987%</span><div style="font-size:10px;color:#555;margin-top:2px">1480m down</div></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#00e676">100.0000%</span></td><td style="text-align:right;padding:7px 14px;font-size:12px;font-family:monospace"><span style="color:#ff4444">98.5658%</span><div style="font-size:10px;color:#555;margin-top:2px">1489m down</div></td></tr>
-
-      </tbody>
-    </table>
-  </div>
-  <div class="divider"></div>
-
 
   <h2>Endpoint Downtime</h2>
   <p class="section-desc" style="margin-bottom:14px">Downtime per endpoint, worst first.
   Colors: <span style="color:#00e676">green = 100%</span> ·
-  <span style="color:#ff9800">orange ≥ 99%</span> ·
+  <span style="color:#ff9800">orange &ge; 99%</span> ·
   <span style="color:#ff4444">red &lt; 99%</span>.</p>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260417170029"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260417170029"></canvas></div>
-<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260417170029"></canvas></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start"><div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#00e676">AP &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-ap-20260417170605"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#ff9800">EU &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-eu-20260417170605"></canvas></div>
+<div class="chart-wrap" style="height:420px"><div class="chart-title" style="color:#2196F3">NA &nbsp;·&nbsp; Endpoint Downtime &nbsp;<span style="font-size:10px;color:#555;font-weight:400">longer = worse · hover for %</span></div><canvas id="ep-na-20260417170605"></canvas></div>
 </div>
 
-  <div class="run-info">Generated 2026-04-17 17:00:29 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 209 at 100% &nbsp;·&nbsp; 43 degraded &nbsp;·&nbsp; April 16, 15:00 UTC – April 17, 15:00 UTC · 24h</div>
+  <div class="run-info">Generated 2026-04-17 17:06:05 UTC &nbsp;·&nbsp; 252 mountpoints &nbsp;·&nbsp; 209 at 100% &nbsp;·&nbsp; 43 degraded &nbsp;·&nbsp; April 16, 15:00 UTC – April 17, 15:00 UTC · 24h</div>
 
   <script>
   (function() {
     Chart.defaults.color = '#666';
     Chart.defaults.borderColor = '#1e1e1e';
     
-  const trendCtx = document.getElementById('trend-20260417170029').getContext('2d');
+  const trendCtx = document.getElementById('trend-20260417170605').getContext('2d');
   new Chart(trendCtx, {
     type:'bar',
     data:{
@@ -147,8 +128,53 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
     }
   });
     
-  const epCtx_ap_20260417170029 = document.getElementById('ep-ap-20260417170029').getContext('2d');
-  new Chart(epCtx_ap_20260417170029, {
+  const gcCtx_20260417170605 = document.getElementById('group-20260417170605').getContext('2d');
+  new Chart(gcCtx_20260417170605, {
+    type: 'bar',
+    data: {
+      labels: ["AP", "EU", "NA", "Combined"],
+      datasets: [{"label": "Cx-Integrity", "data": [100.0, 99.8729, 100.0, 99.9576], "backgroundColor": "rgba(156,39,176,0.55)", "borderColor": "#9c27b0", "borderWidth": 1, "borderRadius": 3}, {"label": "Cx", "data": [100.0, 98.7702, 100.0, 99.5901], "backgroundColor": "rgba(33,150,243,0.55)", "borderColor": "#2196F3", "borderWidth": 1, "borderRadius": 3}, {"label": "Dx", "data": [100.0, 100.0, 100.0, 100.0], "backgroundColor": "rgba(0,230,118,0.55)", "borderColor": "#00e676", "borderWidth": 1, "borderRadius": 3}, {"label": "Nx", "data": [99.9653, 96.1987, 100.0, 98.5658], "backgroundColor": "rgba(255,152,0,0.55)", "borderColor": "#ff9800", "borderWidth": 1, "borderRadius": 3}]
+    },
+    options: {
+      animation: false,
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: { color: '#aaa', font: { size: 11 }, boxWidth: 12, padding: 10 }
+        },
+        tooltip: {
+          backgroundColor: '#1a1e25',
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          titleColor: '#9ca3af',
+          bodyColor: '#e8eaf0',
+          callbacks: {
+            label: ctx => ctx.parsed.y !== null
+              ? ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(4)}%`
+              : ` ${ctx.dataset.label}: N/A`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#888', font: { size: 11 } },
+          grid:  { display: false }
+        },
+        y: {
+          min: 95.9,
+          max: 100.05,
+          ticks: { color: '#666', font: { size: 10 }, callback: v => v.toFixed(2) + '%' },
+          grid:  { color: '#222' }
+        }
+      }
+    }
+  });
+    
+  const epCtx_ap_20260417170605 = document.getElementById('ep-ap-20260417170605').getContext('2d');
+  new Chart(epCtx_ap_20260417170605, {
     type:'bar',
     data:{
       labels:["NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "OSR", "SSR", "SSR-integrity"],
@@ -171,8 +197,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_eu_20260417170029 = document.getElementById('ep-eu-20260417170029').getContext('2d');
-  new Chart(epCtx_eu_20260417170029, {
+  const epCtx_eu_20260417170605 = document.getElementById('ep-eu-20260417170605').getContext('2d');
+  new Chart(epCtx_eu_20260417170605, {
     type:'bar',
     data:{
       labels:["NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31", "SSR", "OSR", "MSM5-ZB", "SSR-integrity", "DX-MSM1", "MSM4", "MSM5"],
@@ -195,8 +221,8 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
       }
     }
   });
-  const epCtx_na_20260417170029 = document.getElementById('ep-na-20260417170029').getContext('2d');
-  new Chart(epCtx_na_20260417170029, {
+  const epCtx_na_20260417170605 = document.getElementById('ep-na-20260417170605').getContext('2d');
+  new Chart(epCtx_na_20260417170605, {
     type:'bar',
     data:{
       labels:["DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "NXRTK-NAD83-MSM5", "NXRTK-RTCM31", "OSR", "SSR", "SSR-integrity"],

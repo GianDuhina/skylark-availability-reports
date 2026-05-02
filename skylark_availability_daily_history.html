@@ -39,6 +39,1686 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 <body>
 <!-- LOG_START -->
 
+<div class="log-entry" id="entry-20260502200358">
+
+  <!-- ROW 1: Header + Overview -->
+  <div class="overview-block">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:12px;font-weight:600;color:#555;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Saturday, May 2, 2026
+      </span>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-left:8px">
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#22c55e;display:inline-block"></span>&gt;&nbsp;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#86efac;display:inline-block"></span>99.90&ndash;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#facc15;display:inline-block"></span>99.00&ndash;99.90%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#f97316;display:inline-block"></span>95.00&ndash;99.00%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block"></span>&lt;&nbsp;95.00%</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr minmax(260px,360px);gap:18px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:190px;max-width:210px"><div class="stat-card">
+    <div class="stat-label">24h Availability</div>
+    <div class="stat-value" style="color:#00e676">99.939%</div>
+    <div class="stat-sub">all endpoints &middot; 24h shift window</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Had Downtime</div>
+    <div class="stat-value" style="color:#ff6b35">73<span style="font-size:14px;color:#444"> / 252</span></div>
+    <div class="stat-sub">endpoints affected</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Total Downtime</div>
+    <div class="stat-value" style="font-size:22px;color:#ff6b35">221<span style="font-size:13px;color:#444"> min</span></div>
+    <div class="stat-sub">sum across all endpoints</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Data Window</div>
+    <div class="stat-value" style="font-size:12px;color:#777;line-height:1.6">May 1, 15:00 UTC – May 2, 15:00 UTC · 24h</div>
+    <div class="stat-sub">60s step</div>
+  </div></div>
+      <div class="chart-wrap" style="height:240px"><div class="chart-title" style="margin-bottom:10px">AVAILABILITY TREND BY REGION</div><div style="position:relative;height:180px"><canvas id="trend-20260502200358"></canvas></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Region</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Frequency</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Port</div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">AP</div><div style="font-size:17px;font-weight:700;color:#00e676">99.987%</div><div style="font-size:10px;color:#333;margin-top:2px">12 degraded &middot; 15m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">ALL-FREQ</div><div style="font-size:17px;font-weight:700;color:#00e676">99.916%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTP :2101</div><div style="font-size:17px;font-weight:700;color:#00e676">99.941%</div><div style="font-size:10px;color:#333;margin-top:2px">71m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">EU</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.885%</div><div style="font-size:10px;color:#333;margin-top:2px">28 degraded &middot; 144m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L2</div><div style="font-size:17px;font-weight:700;color:#00e676">99.955%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTPS :2102</div><div style="font-size:17px;font-weight:700;color:#00e676">99.937%</div><div style="font-size:10px;color:#333;margin-top:2px">76m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">NA</div><div style="font-size:17px;font-weight:700;color:#00e676">99.951%</div><div style="font-size:10px;color:#333;margin-top:2px">33 degraded &middot; 62m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L5</div><div style="font-size:17px;font-weight:700;color:#00e676">99.943%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">Ent :2103</div><div style="font-size:17px;font-weight:700;color:#00e676">99.939%</div><div style="font-size:10px;color:#333;margin-top:2px">74m down</div></div></div>
+</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 2: Mountpoint Group Charts (2×2) -->
+  <h2>Mountpoint Group Summary</h2>
+  <p class="section-desc" style="margin-bottom:12px">Availability per business group &middot; Combined, EU, NA, AP rows &middot; hover for exact %</p>
+  <div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">Combined</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-combined-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-combined-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-combined-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-combined-20260502200358"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">EU</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-eu-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-eu-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-eu-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-eu-20260502200358"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">NA</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-na-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-na-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-na-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-na-20260502200358"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">AP</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-ap-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-ap-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-ap-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-ap-20260502200358"></canvas></div>
+</div>
+
+
+  <div class="divider"></div>
+
+  <!-- ROW 3: Endpoint Downtime -->
+  <h2>Endpoint Downtime</h2>
+  <p class="section-desc" style="margin-bottom:12px">Per-endpoint downtime worst first &middot; hover for availability %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start"><div class="chart-wrap" style="height:390px"><div class="chart-title">AP &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-ap-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">EU &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-eu-20260502200358"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">NA &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-na-20260502200358"></canvas></div>
+</div>
+
+  <div class="run-info">Generated 2026-05-02 20:03:58 UTC &middot; 252 mountpoints &middot; 179 at 100% &middot; 73 degraded &middot; May 1, 15:00 UTC – May 2, 15:00 UTC · 24h</div>
+
+  <script>
+  (function() {
+    Chart.defaults.color = '#555';
+    Chart.defaults.borderColor = '#191919';
+    
+  function barColor_20260502200358(v, a) {
+    a = (a === undefined) ? 1.0 : a;
+    if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+    if (v > 99.95) return `rgba(34,197,94,${a})`;
+    if (v > 99.90) return `rgba(134,239,172,${a})`;
+    if (v > 99.00) return `rgba(250,204,21,${a})`;
+    if (v > 95.00) return `rgba(249,115,22,${a})`;
+    return `rgba(239,68,68,${a})`;
+  }
+    
+  (function(){
+    const tLabels_20260502200358 = ["Fri May 1  \u00b7  AP", "Fri May 1  \u00b7  EU", "Fri May 1  \u00b7  NA", "Sat May 2  \u00b7  AP", "Sat May 2  \u00b7  EU", "Sat May 2  \u00b7  NA"];
+    const tData_20260502200358   = [99.9644, 99.9363, 100.0, 100.0, 99.8546, 99.9209];
+    const tColors_20260502200358 = tData_20260502200358.map(v => {
+      if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+      if (v > 99.95) return '#22c55e';
+      if (v > 99.90) return '#86efac';
+      if (v > 99.00) return '#facc15';
+      if (v > 95.00) return '#f97316';
+      return '#ef4444';
+    });
+    new Chart(document.getElementById('trend-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{
+        labels: tLabels_20260502200358,
+        datasets:[{
+          data: tData_20260502200358,
+          backgroundColor: tColors_20260502200358.map(c => c + 'cc'),
+          borderColor:     tColors_20260502200358,
+          borderWidth:1, borderRadius:3, borderSkipped:false
+        }]
+      },
+      options:{
+        indexAxis:'y',
+        animation:false, responsive:true, maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{
+            backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+            callbacks:{label:ctx=>ctx.raw!==null?` ${ctx.raw.toFixed(4)}%`:' N/A'}
+          }
+        },
+        scales:{
+          x:{min:99.75,max:100.1,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(2)+'%'},grid:{color:'#1a1a1a'}},
+          y:{ticks:{color:'#555',font:{size:10},crossAlign:'far'},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const d_gc_skylark_cx_integrity_combined_20260502200358=[99.9384, 99.9445];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-combined-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_integrity_combined_20260502200358,
+        backgroundColor:d_gc_skylark_cx_integrity_combined_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_combined_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_combined_20260502200358=[99.9671, 99.9087];
+    new Chart(document.getElementById('gc-skylark-cx-combined-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_combined_20260502200358,
+        backgroundColor:d_gc_skylark_cx_combined_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_combined_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_combined_20260502200358=[100.0, 99.9877];
+    new Chart(document.getElementById('gc-skylark-dx-combined-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_dx_combined_20260502200358,
+        backgroundColor:d_gc_skylark_dx_combined_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_dx_combined_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_combined_20260502200358=[99.9615, 99.9183];
+    new Chart(document.getElementById('gc-skylark-nx-combined-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_nx_combined_20260502200358,
+        backgroundColor:d_gc_skylark_nx_combined_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_nx_combined_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_eu_20260502200358=[99.8152, 99.8335];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-eu-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_integrity_eu_20260502200358,
+        backgroundColor:d_gc_skylark_cx_integrity_eu_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_eu_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_eu_20260502200358=[99.9014, 99.7484];
+    new Chart(document.getElementById('gc-skylark-cx-eu-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_eu_20260502200358,
+        backgroundColor:d_gc_skylark_cx_eu_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_eu_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.4,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_eu_20260502200358=[100.0, 99.963];
+    new Chart(document.getElementById('gc-skylark-dx-eu-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_dx_eu_20260502200358,
+        backgroundColor:d_gc_skylark_dx_eu_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_dx_eu_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_eu_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-eu-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_nx_eu_20260502200358,
+        backgroundColor:d_gc_skylark_nx_eu_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_nx_eu_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_na_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-na-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_integrity_na_20260502200358,
+        backgroundColor:d_gc_skylark_cx_integrity_na_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_na_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_na_20260502200358=[100.0, 99.9778];
+    new Chart(document.getElementById('gc-skylark-cx-na-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_na_20260502200358,
+        backgroundColor:d_gc_skylark_cx_na_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_na_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_na_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-na-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_dx_na_20260502200358,
+        backgroundColor:d_gc_skylark_dx_na_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_dx_na_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_na_20260502200358=[100.0, 99.7821];
+    new Chart(document.getElementById('gc-skylark-nx-na-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_nx_na_20260502200358,
+        backgroundColor:d_gc_skylark_nx_na_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_nx_na_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_ap_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-ap-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_integrity_ap_20260502200358,
+        backgroundColor:d_gc_skylark_cx_integrity_ap_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_ap_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_ap_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-ap-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_cx_ap_20260502200358,
+        backgroundColor:d_gc_skylark_cx_ap_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_cx_ap_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_ap_20260502200358=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-ap-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_dx_ap_20260502200358,
+        backgroundColor:d_gc_skylark_dx_ap_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_dx_ap_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_ap_20260502200358=[99.846, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-ap-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 01", "May 02"],datasets:[{
+        data:d_gc_skylark_nx_ap_20260502200358,
+        backgroundColor:d_gc_skylark_nx_ap_20260502200358.map(v=>barColor_20260502200358(v,0.78)),
+        borderColor:d_gc_skylark_nx_ap_20260502200358.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const ep_ap_20260502200358_av=[99.908, 99.977, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_ap_20260502200358_dn=[0.092, 0.023, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-ap-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-RTCM31", "NXRTK-MSM5", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_ap_20260502200358_dn,
+        backgroundColor:ep_ap_20260502200358_av.map(v=>barColor_20260502200358(v,0.55)),
+        borderColor:ep_ap_20260502200358_av.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_ap_20260502200358_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.120,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_eu_20260502200358_av=[99.137, 99.827, 99.954, 99.977, 99.977, 99.977, 99.985, 100.0, 100.0, 100.0], ep_eu_20260502200358_dn=[0.863, 0.173, 0.046, 0.023, 0.023, 0.023, 0.015, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-eu-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["SSR", "SSR-integrity", "MSM5-ZB", "DX-MSM1", "MSM4", "MSM5", "OSR", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31"],datasets:[{
+        data:ep_eu_20260502200358_dn,
+        backgroundColor:ep_eu_20260502200358_av.map(v=>barColor_20260502200358(v,0.55)),
+        borderColor:ep_eu_20260502200358_av.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_eu_20260502200358_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:1.122,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_na_20260502200358_av=[99.854, 99.854, 99.884, 99.931, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_na_20260502200358_dn=[0.146, 0.146, 0.116, 0.069, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-na-20260502200358').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-NAD83-MSM5", "NXRTK-RTCM31", "NXRTK-MSM5", "SSR", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "OSR", "SSR-integrity"],datasets:[{
+        data:ep_na_20260502200358_dn,
+        backgroundColor:ep_na_20260502200358_av.map(v=>barColor_20260502200358(v,0.55)),
+        borderColor:ep_na_20260502200358_av.map(v=>barColor_20260502200358(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_na_20260502200358_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.190,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    window.chartsReady = true;
+  })();
+  </script>
+</div>
+<hr class="entry-sep">
+
+
+<div class="log-entry" id="entry-20260502070500">
+
+  <!-- ROW 1: Header + Overview -->
+  <div class="overview-block">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:12px;font-weight:600;color:#555;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Friday, May 1, 2026
+      </span>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-left:8px">
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#22c55e;display:inline-block"></span>&gt;&nbsp;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#86efac;display:inline-block"></span>99.90&ndash;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#facc15;display:inline-block"></span>99.00&ndash;99.90%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#f97316;display:inline-block"></span>95.00&ndash;99.00%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block"></span>&lt;&nbsp;95.00%</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr minmax(260px,360px);gap:18px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:190px;max-width:210px"><div class="stat-card">
+    <div class="stat-label">24h Availability</div>
+    <div class="stat-value" style="color:#ff9800">99.655%</div>
+    <div class="stat-sub">all endpoints &middot; 24h shift window</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Had Downtime</div>
+    <div class="stat-value" style="color:#ff6b35">116<span style="font-size:14px;color:#444"> / 252</span></div>
+    <div class="stat-sub">endpoints affected</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Total Downtime</div>
+    <div class="stat-value" style="font-size:22px;color:#ff6b35">1253<span style="font-size:13px;color:#444"> min</span></div>
+    <div class="stat-sub">sum across all endpoints</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Data Window</div>
+    <div class="stat-value" style="font-size:12px;color:#777;line-height:1.6">April 30, 15:00 UTC – May 1, 15:00 UTC · 24h</div>
+    <div class="stat-sub">60s step</div>
+  </div></div>
+      <div class="chart-wrap" style="height:240px"><div class="chart-title" style="margin-bottom:10px">AVAILABILITY TREND BY REGION</div><div style="position:relative;height:180px"><canvas id="trend-20260502070500"></canvas></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Region</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Frequency</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Port</div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">AP</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.331%</div><div style="font-size:10px;color:#333;margin-top:2px">27 degraded &middot; 752m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">ALL-FREQ</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.598%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTP :2101</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.652%</div><div style="font-size:10px;color:#333;margin-top:2px">421m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">EU</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.642%</div><div style="font-size:10px;color:#333;margin-top:2px">55 degraded &middot; 449m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L2</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.620%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTPS :2102</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.652%</div><div style="font-size:10px;color:#333;margin-top:2px">421m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">NA</div><div style="font-size:17px;font-weight:700;color:#00e676">99.959%</div><div style="font-size:10px;color:#333;margin-top:2px">34 degraded &middot; 52m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L5</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.742%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">Ent :2103</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.661%</div><div style="font-size:10px;color:#333;margin-top:2px">411m down</div></div></div>
+</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 2: Mountpoint Group Charts (2×2) -->
+  <h2>Mountpoint Group Summary</h2>
+  <p class="section-desc" style="margin-bottom:12px">Availability per business group &middot; Combined, EU, NA, AP rows &middot; hover for exact %</p>
+  <div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">Combined</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-combined-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-combined-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-combined-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-combined-20260502070500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">EU</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-eu-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-eu-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-eu-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-eu-20260502070500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">NA</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-na-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-na-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-na-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-na-20260502070500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">AP</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-ap-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-ap-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-ap-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-ap-20260502070500"></canvas></div>
+</div>
+
+
+  <div class="divider"></div>
+
+  <!-- ROW 3: Endpoint Downtime -->
+  <h2>Endpoint Downtime</h2>
+  <p class="section-desc" style="margin-bottom:12px">Per-endpoint downtime worst first &middot; hover for availability %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start"><div class="chart-wrap" style="height:390px"><div class="chart-title">AP &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-ap-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">EU &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-eu-20260502070500"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">NA &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-na-20260502070500"></canvas></div>
+</div>
+
+  <div class="run-info">Generated 2026-05-02 07:05:00 UTC &middot; 252 mountpoints &middot; 136 at 100% &middot; 116 degraded &middot; April 30, 15:00 UTC – May 1, 15:00 UTC · 24h</div>
+
+  <script>
+  (function() {
+    Chart.defaults.color = '#555';
+    Chart.defaults.borderColor = '#191919';
+    
+  function barColor_20260502070500(v, a) {
+    a = (a === undefined) ? 1.0 : a;
+    if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+    if (v > 99.95) return `rgba(34,197,94,${a})`;
+    if (v > 99.90) return `rgba(134,239,172,${a})`;
+    if (v > 99.00) return `rgba(250,204,21,${a})`;
+    if (v > 95.00) return `rgba(249,115,22,${a})`;
+    return `rgba(239,68,68,${a})`;
+  }
+    
+  (function(){
+    const tLabels_20260502070500 = ["Thu April 30  \u00b7  AP", "Thu April 30  \u00b7  EU", "Thu April 30  \u00b7  NA", "Fri May 1  \u00b7  AP", "Fri May 1  \u00b7  EU", "Fri May 1  \u00b7  NA"];
+    const tData_20260502070500   = [99.9787, 99.7727, 100.0, 98.9427, 99.5637, 99.9337];
+    const tColors_20260502070500 = tData_20260502070500.map(v => {
+      if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+      if (v > 99.95) return '#22c55e';
+      if (v > 99.90) return '#86efac';
+      if (v > 99.00) return '#facc15';
+      if (v > 95.00) return '#f97316';
+      return '#ef4444';
+    });
+    new Chart(document.getElementById('trend-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{
+        labels: tLabels_20260502070500,
+        datasets:[{
+          data: tData_20260502070500,
+          backgroundColor: tColors_20260502070500.map(c => c + 'cc'),
+          borderColor:     tColors_20260502070500,
+          borderWidth:1, borderRadius:3, borderSkipped:false
+        }]
+      },
+      options:{
+        indexAxis:'y',
+        animation:false, responsive:true, maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{
+            backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+            callbacks:{label:ctx=>ctx.raw!==null?` ${ctx.raw.toFixed(4)}%`:' N/A'}
+          }
+        },
+        scales:{
+          x:{min:98.75,max:100.1,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(2)+'%'},grid:{color:'#1a1a1a'}},
+          y:{ticks:{color:'#555',font:{size:10},crossAlign:'far'},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const d_gc_skylark_cx_integrity_combined_20260502070500=[99.9897, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-combined-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_integrity_combined_20260502070500,
+        backgroundColor:d_gc_skylark_cx_integrity_combined_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_combined_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_combined_20260502070500=[99.8877, 99.8002];
+    new Chart(document.getElementById('gc-skylark-cx-combined-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_combined_20260502070500,
+        backgroundColor:d_gc_skylark_cx_combined_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_combined_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_combined_20260502070500=[99.8357, 99.7287];
+    new Chart(document.getElementById('gc-skylark-dx-combined-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_dx_combined_20260502070500,
+        backgroundColor:d_gc_skylark_dx_combined_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_dx_combined_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.4,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_combined_20260502070500=[99.9769, 98.7236];
+    new Chart(document.getElementById('gc-skylark-nx-combined-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_nx_combined_20260502070500,
+        backgroundColor:d_gc_skylark_nx_combined_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_nx_combined_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:98.4,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_eu_20260502070500=[99.9692, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-eu-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_integrity_eu_20260502070500,
+        backgroundColor:d_gc_skylark_cx_integrity_eu_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_eu_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_eu_20260502070500=[99.6632, 99.5043];
+    new Chart(document.getElementById('gc-skylark-cx-eu-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_eu_20260502070500,
+        backgroundColor:d_gc_skylark_cx_eu_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_eu_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.2,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_eu_20260502070500=[99.5071, 99.3711];
+    new Chart(document.getElementById('gc-skylark-dx-eu-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_dx_eu_20260502070500,
+        backgroundColor:d_gc_skylark_dx_eu_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_dx_eu_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.1,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_eu_20260502070500=[100.0, 99.63];
+    new Chart(document.getElementById('gc-skylark-nx-eu-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_nx_eu_20260502070500,
+        backgroundColor:d_gc_skylark_nx_eu_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_nx_eu_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.3,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_na_20260502070500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-na-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_integrity_na_20260502070500,
+        backgroundColor:d_gc_skylark_cx_integrity_na_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_na_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_na_20260502070500=[100.0, 99.9704];
+    new Chart(document.getElementById('gc-skylark-cx-na-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_na_20260502070500,
+        backgroundColor:d_gc_skylark_cx_na_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_na_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_na_20260502070500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-na-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_dx_na_20260502070500,
+        backgroundColor:d_gc_skylark_dx_na_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_dx_na_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_na_20260502070500=[100.0, 99.8356];
+    new Chart(document.getElementById('gc-skylark-nx-na-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_nx_na_20260502070500,
+        backgroundColor:d_gc_skylark_nx_na_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_nx_na_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_ap_20260502070500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-ap-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_integrity_ap_20260502070500,
+        backgroundColor:d_gc_skylark_cx_integrity_ap_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_ap_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_ap_20260502070500=[100.0, 99.926];
+    new Chart(document.getElementById('gc-skylark-cx-ap-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_cx_ap_20260502070500,
+        backgroundColor:d_gc_skylark_cx_ap_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_cx_ap_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_ap_20260502070500=[100.0, 99.815];
+    new Chart(document.getElementById('gc-skylark-dx-ap-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_dx_ap_20260502070500,
+        backgroundColor:d_gc_skylark_dx_ap_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_dx_ap_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_ap_20260502070500=[99.9076, 95.6961];
+    new Chart(document.getElementById('gc-skylark-nx-ap-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 30", "May 01"],datasets:[{
+        data:d_gc_skylark_nx_ap_20260502070500,
+        backgroundColor:d_gc_skylark_nx_ap_20260502070500.map(v=>barColor_20260502070500(v,0.78)),
+        borderColor:d_gc_skylark_nx_ap_20260502070500.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:95.4,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const ep_ap_20260502070500_av=[97.234, 97.319, 99.884, 99.884, 99.884, 100.0, 100.0, 100.0, 100.0], ep_ap_20260502070500_dn=[2.766, 2.681, 0.116, 0.116, 0.116, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-ap-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-RTCM31", "NXRTK-MSM5", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_ap_20260502070500_dn,
+        backgroundColor:ep_ap_20260502070500_av.map(v=>barColor_20260502070500(v,0.55)),
+        borderColor:ep_ap_20260502070500_av.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_ap_20260502070500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:3.596,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_eu_20260502070500_av=[99.422, 99.422, 99.422, 99.445, 99.715, 99.769, 99.769, 99.769, 99.815, 99.988], ep_eu_20260502070500_dn=[0.578, 0.578, 0.578, 0.555, 0.285, 0.231, 0.231, 0.231, 0.185, 0.012];
+    new Chart(document.getElementById('ep-eu-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["DX-MSM1", "MSM4", "MSM5", "SSR", "MSM5-ZB", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31", "OSR", "SSR-integrity"],datasets:[{
+        data:ep_eu_20260502070500_dn,
+        backgroundColor:ep_eu_20260502070500_av.map(v=>barColor_20260502070500(v,0.55)),
+        borderColor:ep_eu_20260502070500_av.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_eu_20260502070500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.751,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_na_20260502070500_av=[99.884, 99.892, 99.915, 99.931, 99.977, 100.0, 100.0, 100.0, 100.0, 100.0], ep_na_20260502070500_dn=[0.116, 0.108, 0.085, 0.069, 0.023, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-na-20260502070500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-MSM5", "NXRTK-NAD83-MSM5", "NXRTK-RTCM31", "SSR", "MSM5", "DX-MSM1", "MSM4", "MSM5-ZB", "OSR", "SSR-integrity"],datasets:[{
+        data:ep_na_20260502070500_dn,
+        backgroundColor:ep_na_20260502070500_av.map(v=>barColor_20260502070500(v,0.55)),
+        borderColor:ep_na_20260502070500_av.map(v=>barColor_20260502070500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_na_20260502070500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.151,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    window.chartsReady = true;
+  })();
+  </script>
+</div>
+<hr class="entry-sep">
+
+
+<div class="log-entry" id="entry-20260501070505">
+
+  <!-- ROW 1: Header + Overview -->
+  <div class="overview-block">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:12px;font-weight:600;color:#555;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Thursday, April 30, 2026
+      </span>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-left:8px">
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#22c55e;display:inline-block"></span>&gt;&nbsp;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#86efac;display:inline-block"></span>99.90&ndash;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#facc15;display:inline-block"></span>99.00&ndash;99.90%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#f97316;display:inline-block"></span>95.00&ndash;99.00%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block"></span>&lt;&nbsp;95.00%</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr minmax(260px,360px);gap:18px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:190px;max-width:210px"><div class="stat-card">
+    <div class="stat-label">24h Availability</div>
+    <div class="stat-value" style="color:#00e676">99.950%</div>
+    <div class="stat-sub">all endpoints &middot; 24h shift window</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Had Downtime</div>
+    <div class="stat-value" style="color:#ff6b35">51<span style="font-size:14px;color:#444"> / 252</span></div>
+    <div class="stat-sub">endpoints affected</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Total Downtime</div>
+    <div class="stat-value" style="font-size:22px;color:#ff6b35">181<span style="font-size:13px;color:#444"> min</span></div>
+    <div class="stat-sub">sum across all endpoints</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Data Window</div>
+    <div class="stat-value" style="font-size:12px;color:#777;line-height:1.6">April 29, 15:00 UTC – April 30, 15:00 UTC · 24h</div>
+    <div class="stat-sub">60s step</div>
+  </div></div>
+      <div class="chart-wrap" style="height:240px"><div class="chart-title" style="margin-bottom:10px">AVAILABILITY TREND BY REGION</div><div style="position:relative;height:180px"><canvas id="trend-20260501070505"></canvas></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Region</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Frequency</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Port</div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">AP</div><div style="font-size:17px;font-weight:700;color:#00e676">99.992%</div><div style="font-size:10px;color:#333;margin-top:2px">9 degraded &middot; 9m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">ALL-FREQ</div><div style="font-size:17px;font-weight:700;color:#00e676">99.944%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTP :2101</div><div style="font-size:17px;font-weight:700;color:#00e676">99.946%</div><div style="font-size:10px;color:#333;margin-top:2px">65m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">EU</div><div style="font-size:17px;font-weight:700;color:#00e676">99.905%</div><div style="font-size:10px;color:#333;margin-top:2px">18 degraded &middot; 119m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L2</div><div style="font-size:17px;font-weight:700;color:#00e676">99.922%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTPS :2102</div><div style="font-size:17px;font-weight:700;color:#00e676">99.953%</div><div style="font-size:10px;color:#333;margin-top:2px">57m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">NA</div><div style="font-size:17px;font-weight:700;color:#00e676">99.958%</div><div style="font-size:10px;color:#333;margin-top:2px">24 degraded &middot; 53m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L5</div><div style="font-size:17px;font-weight:700;color:#00e676">99.984%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">Ent :2103</div><div style="font-size:17px;font-weight:700;color:#00e676">99.951%</div><div style="font-size:10px;color:#333;margin-top:2px">59m down</div></div></div>
+</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 2: Mountpoint Group Charts (2×2) -->
+  <h2>Mountpoint Group Summary</h2>
+  <p class="section-desc" style="margin-bottom:12px">Availability per business group &middot; Combined, EU, NA, AP rows &middot; hover for exact %</p>
+  <div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">Combined</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-combined-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-combined-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-combined-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-combined-20260501070505"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">EU</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-eu-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-eu-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-eu-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-eu-20260501070505"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">NA</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-na-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-na-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-na-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-na-20260501070505"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">AP</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-ap-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-ap-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-ap-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-ap-20260501070505"></canvas></div>
+</div>
+
+
+  <div class="divider"></div>
+
+  <!-- ROW 3: Endpoint Downtime -->
+  <h2>Endpoint Downtime</h2>
+  <p class="section-desc" style="margin-bottom:12px">Per-endpoint downtime worst first &middot; hover for availability %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start"><div class="chart-wrap" style="height:390px"><div class="chart-title">AP &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-ap-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">EU &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-eu-20260501070505"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">NA &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-na-20260501070505"></canvas></div>
+</div>
+
+  <div class="run-info">Generated 2026-05-01 07:05:05 UTC &middot; 252 mountpoints &middot; 201 at 100% &middot; 51 degraded &middot; April 29, 15:00 UTC – April 30, 15:00 UTC · 24h</div>
+
+  <script>
+  (function() {
+    Chart.defaults.color = '#555';
+    Chart.defaults.borderColor = '#191919';
+    
+  function barColor_20260501070505(v, a) {
+    a = (a === undefined) ? 1.0 : a;
+    if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+    if (v > 99.95) return `rgba(34,197,94,${a})`;
+    if (v > 99.90) return `rgba(134,239,172,${a})`;
+    if (v > 99.00) return `rgba(250,204,21,${a})`;
+    if (v > 95.00) return `rgba(249,115,22,${a})`;
+    return `rgba(239,68,68,${a})`;
+  }
+    
+  (function(){
+    const tLabels_20260501070505 = ["Wed April 29  \u00b7  AP", "Wed April 29  \u00b7  EU", "Wed April 29  \u00b7  NA", "Thu April 30  \u00b7  AP", "Thu April 30  \u00b7  EU", "Thu April 30  \u00b7  NA"];
+    const tData_20260501070505   = [99.9787, 99.9171, 99.9383, 100.0, 99.8979, 99.9694];
+    const tColors_20260501070505 = tData_20260501070505.map(v => {
+      if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+      if (v > 99.95) return '#22c55e';
+      if (v > 99.90) return '#86efac';
+      if (v > 99.00) return '#facc15';
+      if (v > 95.00) return '#f97316';
+      return '#ef4444';
+    });
+    new Chart(document.getElementById('trend-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{
+        labels: tLabels_20260501070505,
+        datasets:[{
+          data: tData_20260501070505,
+          backgroundColor: tColors_20260501070505.map(c => c + 'cc'),
+          borderColor:     tColors_20260501070505,
+          borderWidth:1, borderRadius:3, borderSkipped:false
+        }]
+      },
+      options:{
+        indexAxis:'y',
+        animation:false, responsive:true, maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{
+            backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+            callbacks:{label:ctx=>ctx.raw!==null?` ${ctx.raw.toFixed(4)}%`:' N/A'}
+          }
+        },
+        scales:{
+          x:{min:99.75,max:100.1,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(2)+'%'},grid:{color:'#1a1a1a'}},
+          y:{ticks:{color:'#555',font:{size:10},crossAlign:'far'},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const d_gc_skylark_cx_integrity_combined_20260501070505=[100.0, 99.9692];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-combined-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_integrity_combined_20260501070505,
+        backgroundColor:d_gc_skylark_cx_integrity_combined_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_combined_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_combined_20260501070505=[99.9493, 99.9408];
+    new Chart(document.getElementById('gc-skylark-cx-combined-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_combined_20260501070505,
+        backgroundColor:d_gc_skylark_cx_combined_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_combined_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_combined_20260501070505=[99.9863, 99.9877];
+    new Chart(document.getElementById('gc-skylark-dx-combined-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_dx_combined_20260501070505,
+        backgroundColor:d_gc_skylark_dx_combined_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_dx_combined_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_combined_20260501070505=[99.9024, 99.963];
+    new Chart(document.getElementById('gc-skylark-nx-combined-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_nx_combined_20260501070505,
+        backgroundColor:d_gc_skylark_nx_combined_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_nx_combined_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_eu_20260501070505=[100.0, 99.9075];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-eu-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_integrity_eu_20260501070505,
+        backgroundColor:d_gc_skylark_cx_integrity_eu_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_eu_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_eu_20260501070505=[99.848, 99.8224];
+    new Chart(document.getElementById('gc-skylark-cx-eu-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_eu_20260501070505,
+        backgroundColor:d_gc_skylark_cx_eu_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_eu_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_eu_20260501070505=[99.9589, 99.963];
+    new Chart(document.getElementById('gc-skylark-dx-eu-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_dx_eu_20260501070505,
+        backgroundColor:d_gc_skylark_dx_eu_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_dx_eu_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_eu_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-eu-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_nx_eu_20260501070505,
+        backgroundColor:d_gc_skylark_nx_eu_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_nx_eu_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_na_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-na-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_integrity_na_20260501070505,
+        backgroundColor:d_gc_skylark_cx_integrity_na_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_na_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_na_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-na-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_na_20260501070505,
+        backgroundColor:d_gc_skylark_cx_na_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_na_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_na_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-na-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_dx_na_20260501070505,
+        backgroundColor:d_gc_skylark_dx_na_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_dx_na_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_na_20260501070505=[99.8015, 99.9013];
+    new Chart(document.getElementById('gc-skylark-nx-na-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_nx_na_20260501070505,
+        backgroundColor:d_gc_skylark_nx_na_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_nx_na_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_ap_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-ap-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_integrity_ap_20260501070505,
+        backgroundColor:d_gc_skylark_cx_integrity_ap_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_ap_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_ap_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-ap-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_cx_ap_20260501070505,
+        backgroundColor:d_gc_skylark_cx_ap_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_cx_ap_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_ap_20260501070505=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-ap-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_dx_ap_20260501070505,
+        backgroundColor:d_gc_skylark_dx_ap_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_dx_ap_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_ap_20260501070505=[99.9076, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-ap-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["Apr 29", "Apr 30"],datasets:[{
+        data:d_gc_skylark_nx_ap_20260501070505,
+        backgroundColor:d_gc_skylark_nx_ap_20260501070505.map(v=>barColor_20260501070505(v,0.78)),
+        borderColor:d_gc_skylark_nx_ap_20260501070505.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const ep_ap_20260501070505_av=[99.931, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_ap_20260501070505_dn=[0.069, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-ap-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-RTCM31", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_ap_20260501070505_dn,
+        backgroundColor:ep_ap_20260501070505_av.map(v=>barColor_20260501070505(v,0.55)),
+        borderColor:ep_ap_20260501070505_av.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_ap_20260501070505_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.100,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_eu_20260501070505_av=[99.214, 99.942, 99.961, 99.977, 99.977, 99.992, 100.0, 100.0, 100.0, 100.0], ep_eu_20260501070505_dn=[0.786, 0.058, 0.039, 0.023, 0.023, 0.008, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-eu-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["SSR", "SSR-integrity", "DX-MSM1", "MSM4", "MSM5", "OSR", "MSM5-ZB", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31"],datasets:[{
+        data:ep_eu_20260501070505_dn,
+        backgroundColor:ep_eu_20260501070505_av.map(v=>barColor_20260501070505(v,0.55)),
+        borderColor:ep_eu_20260501070505_av.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_eu_20260501070505_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:1.022,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_na_20260501070505_av=[99.846, 99.861, 99.884, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_na_20260501070505_dn=[0.154, 0.139, 0.116, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-na-20260501070505').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-RTCM31", "NXRTK-NAD83-MSM5", "NXRTK-MSM5", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_na_20260501070505_dn,
+        backgroundColor:ep_na_20260501070505_av.map(v=>barColor_20260501070505(v,0.55)),
+        borderColor:ep_na_20260501070505_av.map(v=>barColor_20260501070505(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_na_20260501070505_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.200,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    window.chartsReady = true;
+  })();
+  </script>
+</div>
+<hr class="entry-sep">
+
+
 <div class="log-entry" id="entry-20260430152953">
 
   <!-- ROW 1: Header + Overview -->

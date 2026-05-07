@@ -39,6 +39,566 @@ h2 { font-size:11px; font-weight:700; color:#666; letter-spacing:.09em;
 <body>
 <!-- LOG_START -->
 
+<div class="log-entry" id="entry-20260507150500">
+
+  <!-- ROW 1: Header + Overview -->
+  <div class="overview-block">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+      <span class="mode-badge mode-daily">DAILY REPORT</span>
+      <span style="font-size:12px;font-weight:600;color:#555;letter-spacing:.06em;text-transform:uppercase">
+        Skylark Availability &nbsp;&middot;&nbsp; Daily Report — Thursday, May 7, 2026
+      </span>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-left:8px">
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#22c55e;display:inline-block"></span>&gt;&nbsp;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#86efac;display:inline-block"></span>99.90&ndash;99.95%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#facc15;display:inline-block"></span>99.00&ndash;99.90%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#f97316;display:inline-block"></span>95.00&ndash;99.00%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#555;font-weight:600"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block"></span>&lt;&nbsp;95.00%</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr minmax(260px,360px);gap:18px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:190px;max-width:210px"><div class="stat-card">
+    <div class="stat-label">24h Availability</div>
+    <div class="stat-value" style="color:#00e676">99.907%</div>
+    <div class="stat-sub">all endpoints &middot; 24h shift window</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Had Downtime</div>
+    <div class="stat-value" style="color:#ff6b35">69<span style="font-size:14px;color:#444"> / 252</span></div>
+    <div class="stat-sub">endpoints affected</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Total Downtime</div>
+    <div class="stat-value" style="font-size:22px;color:#ff6b35">337<span style="font-size:13px;color:#444"> min</span></div>
+    <div class="stat-sub">sum across all endpoints</div>
+  </div><div class="stat-card">
+    <div class="stat-label">Data Window</div>
+    <div class="stat-value" style="font-size:12px;color:#777;line-height:1.6">May 6, 15:00 UTC – May 7, 15:00 UTC · 24h</div>
+    <div class="stat-sub">60s step</div>
+  </div></div>
+      <div class="chart-wrap" style="height:240px"><div class="chart-title" style="margin-bottom:10px">AVAILABILITY TREND BY REGION</div><div style="position:relative;height:180px"><canvas id="trend-20260507150500"></canvas></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px"><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Region</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Frequency</div><div style="font-size:10px;font-weight:600;color:#333;text-transform:uppercase;letter-spacing:.07em;padding-bottom:3px">Port</div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">AP</div><div style="font-size:17px;font-weight:700;color:#00e676">100.000%</div><div style="font-size:10px;color:#333;margin-top:2px">0 degraded &middot; 0m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">ALL-FREQ</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.838%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTP :2101</div><div style="font-size:17px;font-weight:700;color:#00e676">99.905%</div><div style="font-size:10px;color:#333;margin-top:2px">115m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">EU</div><div style="font-size:17px;font-weight:700;color:#ff9800">99.789%</div><div style="font-size:10px;color:#333;margin-top:2px">36 degraded &middot; 265m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L2</div><div style="font-size:17px;font-weight:700;color:#00e676">99.910%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">HTTPS :2102</div><div style="font-size:17px;font-weight:700;color:#00e676">99.911%</div><div style="font-size:10px;color:#333;margin-top:2px">108m down</div></div></div>
+<div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">NA</div><div style="font-size:17px;font-weight:700;color:#00e676">99.943%</div><div style="font-size:10px;color:#333;margin-top:2px">33 degraded &middot; 72m</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">L1L5</div><div style="font-size:17px;font-weight:700;color:#00e676">99.967%</div><div style="font-size:10px;color:#333;margin-top:2px">avg</div></div></div><div><div style="background:#161616;border:1px solid #202020;border-radius:6px;padding:9px 12px;display:flex;flex-direction:column;justify-content:center"><div style="font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:2px">Ent :2103</div><div style="font-size:17px;font-weight:700;color:#00e676">99.906%</div><div style="font-size:10px;color:#333;margin-top:2px">114m down</div></div></div>
+</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ROW 2: Mountpoint Group Charts (2×2) -->
+  <h2>Mountpoint Group Summary</h2>
+  <p class="section-desc" style="margin-bottom:12px">Availability per business group &middot; Combined, EU, NA, AP rows &middot; hover for exact %</p>
+  <div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">Combined</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-combined-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-combined-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-combined-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-combined-20260507150500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">EU</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-eu-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-eu-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-eu-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-eu-20260507150500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">NA</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-na-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-na-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-na-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-na-20260507150500"></canvas></div>
+</div>
+<div style="font-size:10px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.08em;padding:6px 0 4px">AP</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:10px"><div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX-INTEGRITY</div><canvas id="gc-skylark-cx-integrity-ap-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK CX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(MSM4, MSM5, MSM5-ZB, OSR, SSR)</span></div><canvas id="gc-skylark-cx-ap-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK DX</div><canvas id="gc-skylark-dx-ap-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:195px"><div class="chart-title">SKYLARK NX <span style="font-size:9px;color:#444;font-weight:400;text-transform:none">(NXRTK-MSM5, NXRTK-NAD83-MSM5, NXRTK-ETRF2000-MSM5, NXRTK-RTCM31)</span></div><canvas id="gc-skylark-nx-ap-20260507150500"></canvas></div>
+</div>
+
+
+  <div class="divider"></div>
+
+  <!-- ROW 3: Endpoint Downtime -->
+  <h2>Endpoint Downtime</h2>
+  <p class="section-desc" style="margin-bottom:12px">Per-endpoint downtime worst first &middot; hover for availability %</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start"><div class="chart-wrap" style="height:390px"><div class="chart-title">AP &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-ap-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">EU &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-eu-20260507150500"></canvas></div>
+<div class="chart-wrap" style="height:390px"><div class="chart-title">NA &middot; ENDPOINT DOWNTIME <span style="font-size:9px;color:#333;font-weight:400">longer = worse</span></div><canvas id="ep-na-20260507150500"></canvas></div>
+</div>
+
+  <div class="run-info">Generated 2026-05-07 15:05:00 UTC &middot; 252 mountpoints &middot; 183 at 100% &middot; 69 degraded &middot; May 6, 15:00 UTC – May 7, 15:00 UTC · 24h</div>
+
+  <script>
+  (function() {
+    Chart.defaults.color = '#555';
+    Chart.defaults.borderColor = '#191919';
+    
+  function barColor_20260507150500(v, a) {
+    a = (a === undefined) ? 1.0 : a;
+    if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+    if (v > 99.95) return `rgba(34,197,94,${a})`;
+    if (v > 99.90) return `rgba(134,239,172,${a})`;
+    if (v > 99.00) return `rgba(250,204,21,${a})`;
+    if (v > 95.00) return `rgba(249,115,22,${a})`;
+    return `rgba(239,68,68,${a})`;
+  }
+    
+  (function(){
+    const tLabels_20260507150500 = ["Wed May 6  \u00b7  AP", "Wed May 6  \u00b7  EU", "Wed May 6  \u00b7  NA", "Thu May 7  \u00b7  AP", "Thu May 7  \u00b7  EU", "Thu May 7  \u00b7  NA"];
+    const tData_20260507150500   = [100.0, 99.8363, 99.9298, 100.0, 99.7601, 99.9502];
+    const tColors_20260507150500 = tData_20260507150500.map(v => {
+      if (v === null || v === undefined) return 'rgba(255,255,255,0.06)';
+      if (v > 99.95) return '#22c55e';
+      if (v > 99.90) return '#86efac';
+      if (v > 99.00) return '#facc15';
+      if (v > 95.00) return '#f97316';
+      return '#ef4444';
+    });
+    new Chart(document.getElementById('trend-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{
+        labels: tLabels_20260507150500,
+        datasets:[{
+          data: tData_20260507150500,
+          backgroundColor: tColors_20260507150500.map(c => c + 'cc'),
+          borderColor:     tColors_20260507150500,
+          borderWidth:1, borderRadius:3, borderSkipped:false
+        }]
+      },
+      options:{
+        indexAxis:'y',
+        animation:false, responsive:true, maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{
+            backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+            callbacks:{label:ctx=>ctx.raw!==null?` ${ctx.raw.toFixed(4)}%`:' N/A'}
+          }
+        },
+        scales:{
+          x:{min:99.50,max:100.1,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(2)+'%'},grid:{color:'#1a1a1a'}},
+          y:{ticks:{color:'#555',font:{size:10},crossAlign:'far'},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const d_gc_skylark_cx_integrity_combined_20260507150500=[100.0, 99.889];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-combined-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_integrity_combined_20260507150500,
+        backgroundColor:d_gc_skylark_cx_integrity_combined_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_combined_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_combined_20260507150500=[99.8918, 99.8578];
+    new Chart(document.getElementById('gc-skylark-cx-combined-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_combined_20260507150500,
+        backgroundColor:d_gc_skylark_cx_combined_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_combined_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_combined_20260507150500=[99.9521, 99.9753];
+    new Chart(document.getElementById('gc-skylark-dx-combined-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_dx_combined_20260507150500,
+        backgroundColor:d_gc_skylark_dx_combined_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_dx_combined_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_combined_20260507150500=[99.9384, 99.9538];
+    new Chart(document.getElementById('gc-skylark-nx-combined-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_nx_combined_20260507150500,
+        backgroundColor:d_gc_skylark_nx_combined_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_nx_combined_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_eu_20260507150500=[100.0, 99.667];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-eu-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_integrity_eu_20260507150500,
+        backgroundColor:d_gc_skylark_cx_integrity_eu_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_eu_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.4,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_eu_20260507150500=[99.7125, 99.5955];
+    new Chart(document.getElementById('gc-skylark-cx-eu-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_eu_20260507150500,
+        backgroundColor:d_gc_skylark_cx_eu_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_eu_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.3,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_eu_20260507150500=[99.8562, 99.926];
+    new Chart(document.getElementById('gc-skylark-dx-eu-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_dx_eu_20260507150500,
+        backgroundColor:d_gc_skylark_dx_eu_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_dx_eu_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.6,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_eu_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-eu-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_nx_eu_20260507150500,
+        backgroundColor:d_gc_skylark_nx_eu_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_nx_eu_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_na_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-na-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_integrity_na_20260507150500,
+        backgroundColor:d_gc_skylark_cx_integrity_na_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_na_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_na_20260507150500=[99.963, 99.9778];
+    new Chart(document.getElementById('gc-skylark-cx-na-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_na_20260507150500,
+        backgroundColor:d_gc_skylark_cx_na_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_na_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_na_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-na-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_dx_na_20260507150500,
+        backgroundColor:d_gc_skylark_dx_na_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_dx_na_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_na_20260507150500=[99.8357, 99.8767];
+    new Chart(document.getElementById('gc-skylark-nx-na-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_nx_na_20260507150500,
+        backgroundColor:d_gc_skylark_nx_na_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_nx_na_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.5,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_integrity_ap_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-integrity-ap-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_integrity_ap_20260507150500,
+        backgroundColor:d_gc_skylark_cx_integrity_ap_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_integrity_ap_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_cx_ap_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-cx-ap-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_cx_ap_20260507150500,
+        backgroundColor:d_gc_skylark_cx_ap_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_cx_ap_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_dx_ap_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-dx-ap-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_dx_ap_20260507150500,
+        backgroundColor:d_gc_skylark_dx_ap_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_dx_ap_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const d_gc_skylark_nx_ap_20260507150500=[100.0, 100.0];
+    new Chart(document.getElementById('gc-skylark-nx-ap-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["May 06", "May 07"],datasets:[{
+        data:d_gc_skylark_nx_ap_20260507150500,
+        backgroundColor:d_gc_skylark_nx_ap_20260507150500.map(v=>barColor_20260507150500(v,0.78)),
+        borderColor:d_gc_skylark_nx_ap_20260507150500.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3,borderSkipped:false
+      }]},
+      options:{animation:false,responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{
+          backgroundColor:'#161616',borderColor:'rgba(255,255,255,0.07)',borderWidth:1,
+          callbacks:{label:ctx=>ctx.parsed.y!==null?` ${ctx.parsed.y.toFixed(4)}%`:' N/A'}
+        }},
+        scales:{
+          x:{ticks:{color:'#444',font:{size:10},maxRotation:45,minRotation:0},grid:{display:false}},
+          y:{min:99.7,max:100.05,ticks:{color:'#444',font:{size:10},callback:v=>v.toFixed(1)+'%'},grid:{color:'#191919'}}
+        }
+      }
+    });
+  })();
+    
+  (function(){
+    const ep_ap_20260507150500_av=[100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_ap_20260507150500_dn=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-ap-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "NXRTK-MSM5", "NXRTK-RTCM31", "OSR", "SSR", "SSR-integrity"],datasets:[{
+        data:ep_ap_20260507150500_dn,
+        backgroundColor:ep_ap_20260507150500_av.map(v=>barColor_20260507150500(v,0.55)),
+        borderColor:ep_ap_20260507150500_av.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_ap_20260507150500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.100,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_eu_20260507150500_av=[98.752, 99.684, 99.792, 99.884, 99.9, 99.9, 99.977, 100.0, 100.0, 100.0], ep_eu_20260507150500_dn=[1.248, 0.316, 0.208, 0.116, 0.1, 0.1, 0.023, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-eu-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["SSR", "OSR", "SSR-integrity", "MSM4", "DX-MSM1", "MSM5", "MSM5-ZB", "NXRTK-ETRF2000-MSM5", "NXRTK-MSM5", "NXRTK-RTCM31"],datasets:[{
+        data:ep_eu_20260507150500_dn,
+        backgroundColor:ep_eu_20260507150500_av.map(v=>barColor_20260507150500(v,0.55)),
+        borderColor:ep_eu_20260507150500_av.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_eu_20260507150500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:1.622,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+  (function(){
+    const ep_na_20260507150500_av=[99.838, 99.838, 99.861, 99.908, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0], ep_na_20260507150500_dn=[0.162, 0.162, 0.139, 0.092, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+    new Chart(document.getElementById('ep-na-20260507150500').getContext('2d'),{
+      type:'bar',
+      data:{labels:["NXRTK-NAD83-MSM5", "NXRTK-RTCM31", "SSR", "NXRTK-MSM5", "DX-MSM1", "MSM4", "MSM5", "MSM5-ZB", "OSR", "SSR-integrity"],datasets:[{
+        data:ep_na_20260507150500_dn,
+        backgroundColor:ep_na_20260507150500_av.map(v=>barColor_20260507150500(v,0.55)),
+        borderColor:ep_na_20260507150500_av.map(v=>barColor_20260507150500(v,1.0)),
+        borderWidth:1,borderRadius:3
+      }]},
+      options:{animation:false,indexAxis:'y',responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:(ctx)=>{
+          return ` Avail: ${ep_na_20260507150500_av[ctx.dataIndex].toFixed(3)}%  ·  Down: ${ctx.raw.toFixed(3)}%`;
+        }}}},
+        scales:{
+          x:{min:0,max:0.211,ticks:{color:'#444',count:6,callback:v=>v.toFixed(2)+'%'},grid:{color:'#191919'},title:{display:true,text:'Downtime %',color:'#333',font:{size:10}}},
+          y:{ticks:{color:'#777',font:{size:11}},grid:{display:false}}
+        }
+      }
+    });
+  })();
+    window.chartsReady = true;
+  })();
+  </script>
+</div>
+<hr class="entry-sep">
+
+
 <div class="log-entry" id="entry-20260506154837">
 
   <!-- ROW 1: Header + Overview -->
